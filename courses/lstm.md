@@ -57,3 +57,4 @@ model = Sequential()
 model.add(Embedding(input_dim=vocab_size, output_dim=embedding_dim, input_length=max_len))
 model.add(LSTM(units=128))
 model.add(Dense(vocab_size, activation='softmax'))
+```
