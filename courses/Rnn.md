@@ -69,3 +69,4 @@ We treat this as a **many-to-one** task: input a sequence of words, and predict 
    model.add(Embedding(vocab_size, embedding_dim, input_length=max_seq_len))
    model.add(LSTM(100, return_sequences=False))
    model.add(Dense(vocab_size, activation='softmax'))
+   ```
