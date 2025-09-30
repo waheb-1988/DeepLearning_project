@@ -6,6 +6,6 @@
 5-RNN : https://www.youtube.com/watch?v=qWcTretvSVQ
 6- RNN :https://www.youtube.com/watch?v=jL5kV0rxyNE&list=PL6-3IRz2XF5X-lzMZdmkvGAx1a3kIm7_I&index=4
 
-
+7- Projetcs : https://www.youtube.com/watch?v=g5-iNUnnN_c&list=PLdF3rLdF4ICQ4-fSEucMqoqMz1tEyjp9q&index=2
 
 
