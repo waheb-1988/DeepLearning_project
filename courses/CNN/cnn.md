@@ -34,8 +34,67 @@
 - Convolutional Neural Networks (CNNs), also known as ConvNets, are a class of deep neural networks especially suited for processing grid-like data, most commonly images. :contentReference[oaicite:0]{index=0}  
 - They exploit spatial (2D) structure via localized filters, weight sharing, and pooling, allowing them to learn visual patterns (edges, textures, shapes) effectively. :contentReference[oaicite:1]{index=1}  
 - Applications include image classification, object detection, segmentation, medical imaging, video analysis, etc. :contentReference[oaicite:2]{index=2}  
+![cnn](image-4.png)
+### 1.1. Why We Call It Convolutional Neural Network (CNN)
+
+We call it **Convolutional Neural Network (CNN)** because its core operation is the **mathematical convolution**. Let’s unpack that clearly:
 
 ---
+
+### 🔹 1. What is Convolution?
+
+In mathematics, a **convolution** is an operation that combines two functions to produce a third one.
+
+In image processing / CNNs, this means:
+
+- One function = **input signal** (the image, represented as pixels)  
+- Second function = **kernel/filter** (small matrix of weights)  
+- Convolution = **sliding the kernel over the input and computing dot products**
+
+Mathematically, in 2D (image):
+
+\[
+S(i,j) = (X * K)(i,j) = \sum_m \sum_n X(i+m, j+n) \cdot K(m,n)
+\]
+
+Where:
+
+- \(X\) = input image  
+- \(K\) = kernel (filter)  
+- \(S\) = output feature map  
+
+
+
+### 🔹 2. Why CNNs Use Convolution Instead of Fully Connected Layers
+
+- **Local connectivity**: A pixel is influenced mostly by its nearby neighbors → convolution captures local patterns (edges, corners, textures).  
+- **Weight sharing**: The same kernel slides across the image → fewer parameters, more efficient.  
+- **Translation invariance**: The same pattern (e.g., an edge) can be detected anywhere in the image.  
+
+
+
+### 🔹 3. So Why the Name “Convolutional”?
+
+Because:
+
+- The **main layer type** in these networks is the **convolutional layer**.  
+- Instead of generic matrix multiplications (like in dense layers), the network learns by applying **convolutions with filters/kernels**.  
+- Thus, the entire architecture inherits the name: **Convolutional Neural Network**.  
+
+
+
+#### 🔹 4. Small Analogy
+
+Imagine scanning a picture with a **magnifying glass**:
+
+- The glass (kernel) is the same everywhere.  
+- You slide it over the picture (**convolution**).  
+- You write down what you see at each spot (**feature map**).  
+
+That *“sliding + combining”* process is the **convolution**.  
+
+
+
 ### 1.1. pixels
 Well… images are also numbers!
 
@@ -66,6 +125,7 @@ Usually ranging from black (0) to white (255).
 - The same filter is applied across spatial locations (weight sharing), which reduces parameters and enforces translation invariance.  
 - For multi-channel images (e.g. RGB), a filter operates across all input channels; the dot product is computed per channel and summed. :contentReference[oaicite:6]{index=6}  
 
+![Kernel](2D_Convolution_Animation.gif)
 ### 2.3 Stride & Padding
 
 - **Stride**: the step size (in pixels) the filter moves when sliding over the input. A stride of 1 moves one pixel at a time; stride >1 reduces dimension of output. :contentReference[oaicite:7]{index=7}  
