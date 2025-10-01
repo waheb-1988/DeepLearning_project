@@ -125,7 +125,10 @@ Usually ranging from black (0) to white (255).
 - The same filter is applied across spatial locations (weight sharing), which reduces parameters and enforces translation invariance.  
 - For multi-channel images (e.g. RGB), a filter operates across all input channels; the dot product is computed per channel and summed. :contentReference[oaicite:6]{index=6}  
 
-![Kernel](2D_Convolution_Animation.gif)
+<p align="center">
+  <img src="2D_Convolution_Animation.gif" alt="Kernel animation" />
+</p>
+
 ### 2.3 Stride & Padding
 
 - **Stride**: the step size (in pixels) the filter moves when sliding over the input. A stride of 1 moves one pixel at a time; stride >1 reduces dimension of output. :contentReference[oaicite:7]{index=7}  
