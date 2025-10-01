@@ -36,8 +36,24 @@
 - Applications include image classification, object detection, segmentation, medical imaging, video analysis, etc. :contentReference[oaicite:2]{index=2}  
 
 ---
+### 1.1. pixels
+Well… images are also numbers!
+
+Digital images are essentially grids of tiny units called pixels. Each pixel represents the smallest unit of an image and holds information about the color and intensity at that particular point.
+
+![Pixels](image.png)
+
+Typically, each pixel is composed of three values corresponding to the red, green, and blue (RGB) color channels. These values determine the color and intensity of that pixel.
+
+![RGB](image-1.png)
+
+In contrast, in a grayscale image, each pixel carries a single value that represents the intensity of light at that point.
+Usually ranging from black (0) to white (255).
+
+![From black to white](image-3.png)
 
 ## 2. Mathematical Foundations
+![Nerual Network process](image-2.png)
 
 ### 2.1 Convolution Operation
 
