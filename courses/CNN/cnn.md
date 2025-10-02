@@ -227,7 +227,7 @@ Most modern CNNs (like AlexNet, VGG, ResNet) use **Max Pooling** because it high
 - Used at the end to combine extracted features and produce final predictions.  
 - The final layer often uses a softmax (for multi-class classification) or sigmoid (for binary) activation. :contentReference[oaicite:20]{index=20}  
 
----
+![summary](image-5.png)
 
 ## 4. Training & Backpropagation in CNNs
 
